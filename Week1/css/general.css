@@ -1,0 +1,53 @@
+html {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+}
+
+p, li, h1, h2, h3, h4, h5, legend, label, figcaption, button{
+  color: #616161
+}
+
+h1 {
+  font-size: 125%;
+}
+
+p {
+  font-weight: 300;
+}
+
+body {
+  background-color: #FFFFFB;
+}
+
+a {
+  color: #1E88E5;
+}
+
+a:hover {
+  color: #616161;
+}
+
+section {
+  margin: 1em;
+  flex: 1 0 90%;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+  line-height: 1.8em;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+input
+{
+    font-size: 1em;
+}

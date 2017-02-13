@@ -1,0 +1,156 @@
+@import url("reset.css");
+@import url("general.css");
+
+/*FLEXBOX*/
+main {
+  display: flex;
+  flex-flow: wrap;
+}
+
+/*EXTRA SECTION STYLING*/
+main > section:nth-child(n+2) {
+  box-shadow: 0px 0px 30px 6px #F5F5F5;
+  border-radius: 5px;
+}
+
+/*NAV*/
+header > section {
+  margin-top: 2em;
+}
+
+header > section nav ul {
+  display: flex;
+  justify-content: center;
+  }
+
+header > section nav ul li {
+  padding: 0em .8em 0em .8em;
+  }
+
+header > section nav a {
+  font-weight: 300;
+}
+
+
+/*STEP-INDICATOR MAIN STYLE*/
+main > section:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 300;
+}
+
+main > section:nth-of-type(1) ol li {
+  display: inline;
+  padding-right: .2em;
+}
+
+main > section:nth-of-type(1) li:nth-of-type(1) a {
+  color: #4CAF50;
+}
+
+main > section:nth-of-type(1) li label:current {
+  color: #1E88E5;
+}
+
+main > section:nth-of-type(1) li a:hover {
+  color: #616161;
+}
+
+main > section:nth-of-type(1) ol li:nth-last-child(n+2)::after {
+  content: " >";
+}
+
+main > section:nth-of-type(1) progress {
+  -webkit-appearance: none;
+   appearance: none;
+   width: 70%;
+   height: 12px;
+   margin: .7em;
+}
+
+main > section:nth-of-type(1) progress[value]::-webkit-progress-bar {
+  background-color: #616161;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+main > section:nth-of-type(1) progress[value]::-webkit-progress-value {
+  background-color: #4CAF50;
+  border-radius: 2px;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+/*MEDIA ITEM*/
+/*main section:nth-of-type(2) {
+  background-color: #009688s;
+}*/
+
+main > section:nth-of-type(2) article h1 {
+  padding: 1em;
+}
+
+main > section:nth-of-type(2) article p {
+  padding: 1em;
+}
+
+/*FIGURE*/
+main > section:nth-of-type(3) article {
+  padding: 1em;
+}
+
+main > section:nth-of-type(3) article figcaption {
+  display: flex;
+  flex-direction: column;
+}
+
+main > section:nth-of-type(3) article h1 {
+  text-align: center;
+}
+
+main > section:nth-of-type(3) article img {
+  margin: 1em 0em 1em 0em;
+}
+
+/*LOGIN*/
+main > section:nth-of-type(4) form {
+  display: flex;
+  flex-direction: column;
+}
+
+main > section:nth-of-type(4) form > section:nth-last-of-type(n+2) {
+  display: flex;
+  flex-direction: column;
+}
+
+main > section:nth-of-type(4) form > section:nth-last-of-type(n+2) label {
+  padding-bottom: .5em;
+}
+
+
+main > section:nth-of-type(4) form > section:nth-last-of-type(n+2) > input {
+  height: 2rem;
+  box-shadow: 0px 0px 5px 2px #EEEEEE;
+  border-radius: 5px;
+}
+
+main > section:nth-of-type(4) form a {
+  padding: .5em 0em 1em 1em;
+}
+
+main > section:nth-of-type(4) form button[type='submit'] {
+  height: 2.3em;
+  border-radius: 0px 0px 5px 5px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1em;
+}
+
+main > section:nth-of-type(4) form > section:nth-of-type(3) {
+  display: flex;
+  align-items: center;
+}
+
+main > section:nth-of-type(4) form > section:nth-of-type(3) input[type="checkbox"] {
+  margin-right: .5em;
+}
