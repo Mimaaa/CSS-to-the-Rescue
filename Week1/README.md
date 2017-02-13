@@ -1,3 +1,3 @@
-# Components
+# Week 1
 
-Rating example makes use of Emoji from: http://emojione.com
+[Link to the working website](https://mimaaa.github.io/CSSTTR/FLEX/styleguide.html)
