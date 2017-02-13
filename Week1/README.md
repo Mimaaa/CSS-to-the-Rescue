@@ -1,3 +1,3 @@
 # Week 1
 
-[Link to the working website](https://mimaaa.github.io/CSSTTR/FLEX/styleguide.html)
+[Link to the working website](https://mimaaa.github.io/cssttr/flex/styleguide.html)
