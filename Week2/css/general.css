@@ -1,7 +1,39 @@
-html {
-    font-family: 'Roboto',sans-serif;
-    line-height: 1.5
+
+
+body {
+  font-family: 'Roboto',sans-serif;
+  background-color: #fffffb;
 }
+
+html {
+  line-height: 1.5em;
+}
+
+h1 {
+  font-size: 150%;
+  font-weight: 500;
+}
+
+a {
+  color: #424242;
+}
+
+p {
+  color: #616161;
+}
+
+section {
+    margin: 1em;
+    flex: 1 0 90%
+}
+
+.media-items > section {
+    box-shadow: 0 0 30px 6px #EEEEEE;
+    border-radius: 5px;
+}
+
+
+/*
 
 @font-face {
 	font-family: Ampersand;
@@ -17,28 +49,11 @@ a:hover,button,figcaption,h1,h2,h3,h4,h5,label,legend,li,p {
     color: #616161
 }
 
-h1 {
-    font-size: 125%
-}
 
 p {
     font-weight: 300
 }
 
-body {
-    background-color: #fffffb
-}
-
-a {
-    color: #1e88e5
-}
-
-section {
-    margin: 1em;
-    -webkit-box-flex: 1;
-    -ms-flex: 1 0 90%;
-    flex: 1 0 90%
-}
 
 figure {
     margin: 0
@@ -59,10 +74,6 @@ figcaption {
     line-height: 1.8em
 }
 
-img {
-    width: 100%;
-    height: auto
-}
 
 input {
     font-size: inherit;
@@ -75,4 +86,4 @@ input {
 button[type=submit] {
     color: #fff;
     background-color: #4caf50
-}
+}*/

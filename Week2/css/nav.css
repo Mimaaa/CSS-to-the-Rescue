@@ -1,0 +1,35 @@
+header > section {
+  margin-top: 1.5em;
+}
+
+header > section nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header > section nav li {
+    padding: 1em;
+    color: #424242;
+}
+
+header > section nav a {
+  font-size: 125%;
+  color: currentColor;
+  font-weight: 400;
+}
+
+header > section li:hover {
+  background-color: black;
+  transition: 1s;
+  color: white;
+}
+
+/*DESKTOPS AND LAPTOPS*/
+@media only screen and (min-width:1224px) {
+    header > section nav ul {
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+    }
+}
