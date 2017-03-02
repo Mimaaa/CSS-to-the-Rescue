@@ -1,0 +1,131 @@
+/*------------------------------------*\
+    MEDIA-ITEMS
+\*------------------------------------*/
+.media-items > section h1, p {
+  padding: 1.5em;
+}
+
+.media-items article {
+  position: relative;
+}
+
+.media-items article a::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.media-items article:hover {
+  background-color: #424242;
+  transition: 1.5s;
+  border-radius: 5px;
+}
+
+.media-items article:hover p, .media-items article:hover a {
+  color: white;
+  transition: 1.5s;
+}
+
+.media-items a {
+  text-decoration: none;
+}
+
+.media-items > section:nth-of-type(1) button {
+  width: 100%;
+  height: 3em;
+  font-size: .8em;
+  border-radius: 0 0 5px 5px;
+  background-color: #81C784;
+  color: #fff;
+}
+
+.media-items > section:nth-of-type(n+2) h1 {
+  font-size: 1.125em;
+}
+
+.media-items > section:nth-of-type(n+2) article {
+  display: flex;
+}
+
+.media-items > section:nth-of-type(n+2) button {
+  width: none;
+  height: none;
+  font-size: .8em;
+  border-radius: 0 0 5px 5px;
+  background-color: #81C784;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+}
+
+.media-items > section:nth-of-type(n+2) article img {
+  display: none;
+  height: 30%;
+}
+
+.media-items > section:nth-of-type(n+2) article p {
+  display: none;
+}
+
+
+/*TABLETS*/
+@media only screen and (min-device-width:768px) and (max-device-width:1224px) {
+    .media-items {
+      justify-content: center;
+    }
+
+    .media-items > section:nth-of-type(1) {
+      width: 45%;
+      height: 100%;
+    }
+
+    .media-items > section:nth-of-type(n+2) {
+      width: 35%;
+      height: 100%;
+    }
+
+    .media-items > section:nth-of-type(n+2) article {
+      flex-direction: column;
+    }
+
+    .media-items > section:nth-of-type(n+2) article img, .media-items > section:nth-of-type(n+2) article p {
+      display: unset;
+    }
+
+    .media-items > section:nth-of-type(n+2) button {
+      height: 3em;
+      border-radius: 0 0 5px 5px;
+    }
+}
+
+/*DESKTOPS AND LAPTOPS*/
+@media only screen and (min-width:1224px) {
+    .media-items {
+      justify-content: center;
+    }
+
+    .media-items >section:nth-of-type(1) {
+      width: 35%;
+      height: 100%;
+    }
+
+    .media-items > section:nth-of-type(n+2) {
+      width: 20%;
+      height: 100%;
+    }
+
+    .media-items > section:nth-of-type(n+2) article {
+      flex-direction: column;
+    }
+
+    .media-items > section:nth-of-type(n+2) article img, .media-items > section:nth-of-type(n+2) article p {
+      display: unset;
+    }
+
+    .media-items > section:nth-of-type(n+2) button {
+      height: 3em;
+      border-radius: 0 0 5px 5px;
+    }
+}

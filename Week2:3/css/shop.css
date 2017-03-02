@@ -1,0 +1,133 @@
+.shop {
+  justify-content: center;
+}
+
+/*----*/
+/*PROGRESS*/
+/*----*/
+.shop > section:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 300;
+}
+
+.shop > section:nth-of-type(1) ol li {
+    display: inline;
+    padding: 1em;
+    background-color: #4caf50;
+    color: white;
+}
+
+.shop > section:nth-of-type(1) li:nth-of-type(1) a {
+    color: blue;
+}
+
+.shop > section:nth-of-type(1) li label:current {
+    background-color: #1e88e5;
+}
+
+.shop > section:nth-of-type(1) li a:hover {
+    color: #616161;
+}
+
+.shop > section:nth-of-type(1) ol li:nth-last-child(n+2)::after {
+    content: " >";
+}
+
+/*----*/
+/*CHAT*/
+/*----*/
+.shop > section:nth-of-type(2) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+}
+
+.shop > section:nth-of-type(2), .shop form {
+    box-shadow: 0 0 30px 6px #f5f5f5;
+    border-radius: 5px;
+}
+
+.shop > section:nth-of-type(2) ol {
+    display: flex;
+}
+
+.shop > section:nth-of-type(2) ol, .shop > section:nth-of-type(2) form {
+    padding: 1em;
+    list-style: none;
+}
+
+.shop > section:nth-of-type(2) ol {
+    flex-direction: column
+}
+
+.shop > section:nth-of-type(2) ol li {
+    background-color: #c8e6c9;
+    margin: .5em;
+    border-radius: 10px;
+    padding: .5em;
+    box-shadow: 0 0 15px 7px #f5f5f5;
+}
+
+.shop > section:nth-of-type(2) li>p {
+    font-size: 90%;
+    padding: 0;
+}
+
+.shop > section:nth-of-type(2) li footer,.shop > section:nth-of-type(2)>form {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.shop > section:nth-of-type(2) li footer p {
+    font-size: 70%;
+    padding: .5em;
+}
+
+.shop > section:nth-of-type(2) ol>li:nth-of-type(1), .shop > section:nth-of-type(2) ol>li:nth-of-type(3) {
+    align-self: flex-start;
+}
+
+.shop > section:nth-of-type(2) ol>li:nth-of-type(2) {
+    align-self: flex-end;
+}
+
+.shop > section:nth-of-type(2)>form {
+    border-top: 1px solid #d3d3d3;
+    box-shadow: 0 -5px 10px 3px #f5f5f5;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.shop > section:nth-of-type(2)>form>label {
+    padding-bottom: .7em;
+    flex: 1 0 100%;
+}
+
+.shop > section:nth-of-type(2)>form>textarea[name=field-message] {
+    border-radius: 5px;
+    box-shadow: 0 0 10px 5px #f5f5f5;
+    width: 70%;
+}
+
+.shop > section:nth-of-type(2)>form>button[type=submit] {
+    width: 25%;
+    border-radius: 5px;
+    box-shadow: 0 0 7px 5px #f5f5f5;
+}
+
+/*TABLETS*/
+@media only screen and (min-device-width:768px) and (max-device-width:1224px) {
+    .shop > section:nth-of-type(2) {
+        flex: 0 1 35%;
+    }
+}
+
+/*DESKTOPS AND LAPTOPS*/
+@media only screen and (min-width:1224px) {
+    .shop > section:nth-of-type(2) {
+        flex: 0 1 20%;
+    }
+}

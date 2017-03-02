@@ -1,0 +1,56 @@
+
+
+body {
+  font-family: 'Roboto',sans-serif;
+  background-color: #fffffb;
+}
+
+html {
+  line-height: 1.5em;
+}
+
+h1 {
+  font-size: 150%;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+p, a, legend, figcaption {
+  color: #616161;
+}
+
+section {
+    margin: 1em;
+}
+
+.media-items > section, .artikel > section {
+    box-shadow: 0 0 30px 6px #EEEEEE;
+    border-radius: 5px;
+}
+
+
+/*
+
+@font-face {
+	font-family: Ampersand;
+	src: local('Baskerville-Italic'), local('GoudyOldStyleT-Italic'), local('Garamond-Italic'), local('Palatino-Italic');
+	unicode-range: U+26;
+}
+
+h1 {
+	font-family: Ampersand, Helvetica, sans-serif;
+}
+*/
+
+input {
+    font-size: inherit;
+}
+
+[data-status] {
+    color: #26a69a
+}
+
+button[type=submit] {
+    color: #fff;
+    background-color: #4caf50
+}
