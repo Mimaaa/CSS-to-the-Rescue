@@ -4,6 +4,7 @@
 @import url(media-items.css);
 @import url(article.css);
 @import url(shop.css);
+@import url(usa.css);
 
 
 /*------------------------------------*\
@@ -22,48 +23,120 @@ main {
   flex-direction: column;
   border-radius: 5px;
   box-shadow: 0 0 1000px 300px #f5f5f5;
-
+  transition: all .5s;
 }
 
-#target-content form>section:nth-last-of-type(n+2) {
+#target-content form:invalid {
+  background: rgba(255, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+#target-content form fieldset {
+  display: flex;
+  transition: all .2s;
+  background: PaleGreen;
+  border-radius: 5px;
+}
+
+#target-content fieldset .feedback {
+  display: block;
+  color: white;
+  background: seagreen;
+  padding: .25em;
+}
+
+#target-content fieldset:invalid {
+  background: #ef9a9a;
+  border-radius: 5px;
+}
+
+#target-content fieldset:invalid .feedback {
+  display: none;
+}
+
+#target-content form fieldset>section:nth-last-of-type(n+2) {
     display: flex;
     flex-direction: column;
 }
 
-#target-content form>section:nth-last-of-type(n+2) label {
+#target-content form fieldset>section:nth-last-of-type(n+2) label {
     padding-bottom: .5em;
 }
 
-#target-content form>section:nth-last-of-type(n+2)>input {
+#target-content form fieldset>section:nth-last-of-type(n+2)>input {
     height: 2rem;
-    box-shadow: 0 0 5px 2px #eee;
     border-radius: 5px;
+    transition: all .2s;
+    z-index: 2;
+}
+
+#target-content form fieldset section input:valid {
+  border: solid green 2px;
+}
+
+#target-content input:invalid {
+  border-color: MediumVioletRed;
+  background: LightPink;
+}
+
+#target-content input:focus {
+  transform: scale(1.01, 1.01);
+}
+
+#target-content input:disabled {
+  border-color: #eee;
+  background-color: #f9f9f9;
 }
 
 #target-content form a {
     padding: .5em 0 1em 1em;
 }
 
-#target-content form button[type=submit] {
+#target-content form fieldset button[type=submit] {
+    cursor: not-allowed;
     height: 2.3em;
     border-radius: 0 0 5px 5px;
     font-size: 1em;
+    width: 100%;
 }
 
-#target-content form>section:nth-of-type(3) {
+#target-content form fieldset>section:nth-of-type(3) {
     display: flex;
     align-items: center;
 }
 
-#target-content form>section:nth-of-type(3) input[type=checkbox] {
+#target-content form fieldset>section:nth-of-type(3) input[type=checkbox] {
     margin-right: .5em;
 }
 
-#target-inner > section {
+#target-content input[type="checkbox"] + label::before {
+  content: '\a0'; /* non-break space */
+  display: inline-block;
+  width: .8em;
+  height: .8em;
+  margin-right: .2em;
+  border-radius: .2em;
+  background: white;
+  text-indent: .15em;
+  line-height: .65;
+  margin-right: .6em;
+}
+
+#target-content input[type="checkbox"]:checked + label::before {
+  content: '\2713';
+  background: palegreen;
+}
+
+#target-content input[type="checkbox"] {
+  position: absolute;
+  clip: rect(0,0,0,0);
+}
+
+#target-inner fieldset > section {
   padding: 1em 1em 0 1em;
 }
 
-#target-inner a {
+#target-inner fieldset a {
   text-decoration: underline;
 }
 

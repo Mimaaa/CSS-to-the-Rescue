@@ -5,16 +5,21 @@
 
 .artikel section {
   width: 90%;
+  background-color: white;
 }
 
 .artikel section h1 {
-  font-size: 2em;
+  font-size: 3em;
   text-align: center;
   margin-top: 1em;
   padding: 1em;
 }
 
-figcaption, p {
+.artikel section h2 {
+  font-size: 1.2em;
+}
+
+figcaption, h2 {
   padding: 1.5em;
 }
 
@@ -33,7 +38,8 @@ figcaption, p {
 }
 
 .artikel img {
-  width: 100%;
+  width: 100vw;
+  height: 90vh;
 }
 
 .artikel figcaption {
@@ -79,7 +85,16 @@ figcaption, p {
 }
 
 .rating input {
-  display: none;
+  position: absolute;
+  clip: rect(0,0,0,0);
+}
+
+.rating input:focus + label {
+  outline: 5px dashed #29b6f6;
+}
+
+input[type="checkbox"]:focus + label::before { /* Focus state for tab */
+    box-shadow: 0 0 .1em .1em #58a;
 }
 
 .rating label {

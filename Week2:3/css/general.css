@@ -2,7 +2,12 @@
 
 body {
   font-family: 'Roboto',sans-serif;
-  background-color: #fffffb;
+  background: white;
+  background-image:
+    linear-gradient(90deg, rgba(179, 229, 252, 0.15) 11px, transparent 0),
+    linear-gradient(90deg, rgba(200, 230, 201, 0.15) 23px, transparent 0),
+    linear-gradient(90deg, rgba(255, 224, 178, 0.15) 41px, transparent 0);
+  background-size: 41px 100%, 61px 100%, 83px 100%;
 }
 
 html {
@@ -24,12 +29,9 @@ section {
 }
 
 .media-items > section, .artikel > section {
-    box-shadow: 0 0 30px 6px #EEEEEE;
+    box-shadow: 0 0 30px 8px #e0e0e0;
     border-radius: 5px;
 }
-
-
-/*
 
 @font-face {
 	font-family: Ampersand;
@@ -38,9 +40,8 @@ section {
 }
 
 h1 {
-	font-family: Ampersand, Helvetica, sans-serif;
+	font-family: Ampersand, Roboto, sans-serif;
 }
-*/
 
 input {
     font-size: inherit;

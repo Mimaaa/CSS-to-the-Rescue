@@ -7,6 +7,8 @@
 
 .media-items article {
   position: relative;
+  background-color: white;
+  border-radius: 5px;
 }
 
 .media-items article a::after {
@@ -17,6 +19,13 @@
   bottom: 0;
   right: 0;
 }
+
+*:focus {
+  outline: 5px dashed #29b6f6;
+  padding: .25em;
+  transition: .3s;
+}
+
 
 .media-items article:hover {
   background-color: #424242;

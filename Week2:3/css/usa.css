@@ -1,0 +1,48 @@
+.spinner {
+  justify-content: center;
+  align-items: center;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes pulse {
+  50% {
+    background: black;
+  }
+}
+@keyframes pulse {
+  50% {
+    background: black;
+  }
+}
+
+.loading {
+  align-self: center;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  border: 0.25rem solid rgba(0, 0, 0, 0.2);
+  border-top-color: black;
+  -webkit-animation: spin 1s infinite linear;
+          animation: spin 1s infinite linear;
+}
+
+/*https://codepen.io/alanshortis/pen/eJLVXr*/

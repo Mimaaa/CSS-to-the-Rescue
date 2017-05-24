@@ -15,7 +15,7 @@
       <nav>
         <ul>
           <li><a href="home.html" aria-label="Home, current page">home</a></li>
-          <li><a href="/usa">usa</a></li>
+          <li><a href="usa.html">usa</a></li>
           <li><a href="/world">world</a></li>
           <li><a href="shop.html">shop</a></li>
           <li><a href="#target-content">login</a></li>
@@ -29,7 +29,6 @@
       	<h1><a href="article.html">'Confused' car driver takes wrong turn down steps in central London</a></h1>
       	<img src="media/auto.jpg" alt="A colorful crayon drawing on the hood of a car." />
       	<p>Police say the driver has been issued with a warning for driving without due care but had not been arrested.</p>
-        <button>Read more...</button>
       </article>
     </section>
     <section>
@@ -37,7 +36,6 @@
       	<h1><a href="/">Unidentified sea creature washes up on beach</a></h1>
       	<img src="media/creature.jpg" alt="A colorful crayon drawing on the hood of a car." />
         <p>Locals in Barangay Poblacion are shocked at the discovery of a carcass measuring six metres long and two metres wide.</p>
-        <button>Read more...</button>
       </article>
     </section>
     <section>
@@ -45,26 +43,30 @@
       	<h1><a href="/">£1m cannabis farm found in nuclear bunker</a></h1>
       	<img src="media/wiet.jpg" alt="A colorful crayon drawing on the hood of a car." />
         <p>Police discovered thousands of plants during a raid on the site, constructed to protect VIPs in the event of a nuclear attack.</p>
-        <button>Read more...</button>
       </article>
     </section>
     <div id="target-content">
       <a href="#" class="close"></a>
       <form id="target-inner" action="/" method="post">
-        <section>
-          <label for="field-email">Email</label>
-          <input type="email" id="field-email" name="field-email" autocomplete="email" required>
-        </section>
-        <section>
-          <label for="field-password">Password</label>
-          <input type="password" id="field-password" name="field-password" required>
-        </section>
-        <section>
-          <input type="checkbox" id="field-stay-logged-in" name="field-stay-logged-in" value="stay-logged-in">
-          <label for="field-stay-logged-in">Stay logged in</label>
-        </section>
-        <a href="/">Forgot password</a>
-        <button type="submit">Login</button>
+        <fieldset>
+          <section>
+            <label for="field-email">Email</label>
+            <input type="email" id="field-email" name="field-email" autocomplete="email" required>
+          </section>
+          <section>
+            <label for="field-password">Password</label>
+            <input type="password" id="field-password" name="field-password" required>
+          </section>
+          <section>
+            <p class="feedback">Alles is goed ingevuld!</p>
+          </section>
+          <section>
+            <input type="checkbox" id="field-stay-logged-in" name="field-stay-logged-in" value="stay-logged-in">
+            <label for="field-stay-logged-in">Stay logged in</label>
+          </section>
+          <a href="/">Forgot password</a>
+          <button type="submit">Login</button>
+        </fieldset>
       </form>
     </div>
   </main>
